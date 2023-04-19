@@ -1,0 +1,87 @@
+// import { createTheme } from "@mui/material";
+
+// export const theme = createTheme({
+//   palette: {
+//     mode: mode,
+//     primary: {
+//       main: "#1760a9",
+//       light: "skyblue",
+//     },
+//     secondary: {
+//       main: "#15c630",
+//     },
+//     otherColor: {
+//       main: "#999",
+//     },
+//   },
+//   breakpoints: {
+//     values: {
+//       mobile: 0,
+//       tablet: 640,
+//       laptop: 1024,
+//       desktop: 1200,
+//     },
+//   },
+//   // breakpoints: {
+//   //   values: {
+//   //     xs: 0,
+//   //     sm: 600,
+//   //     md: 900,
+//   //     lg: 1200,
+//   //     xl: 1536,
+//   //   },
+//   // },
+// });
+
+import { createTheme } from "@mui/material";
+import {mode} from '../'
+export const theme = createTheme({
+  palette: {
+    mode: mode, // default mode
+    primary: {
+      main: "#1760a9",
+      light: "skyblue",
+    },
+    secondary: {
+      main: "#15c630",
+    },
+    otherColor: {
+      main: "#999",
+    },
+    // dark mode palette
+    // dark: {
+    //   primary: {
+    //     main: "#90caf9",
+    //     light: "lightblue",
+    //   },
+    //   secondary: {
+    //     main: "#a5d6a7",
+    //   },
+    //   otherColor: {
+    //     main: "#bbb",
+    //   },
+    //   background: {
+    //     default: "#333",
+    //     paper: "#444",
+    //   },
+    //   text: {
+    //     primary: "#fff",
+    //     secondary: "#ccc",
+    //   },
+    // },
+  },
+  breakpoints: {
+    values: {
+      mobile: 0,
+      tablet: 640,
+      laptop: 1024,
+      desktop: 1200,
+    },
+  },
+});
+
+// toggle function to switch between dark and light mode
+// export const toggleDarkMode = () => {
+//   const newPaletteType = theme.palette.mode === "light" ? "dark" : "light";
+//   theme.palette.mode = newPaletteType;
+// };

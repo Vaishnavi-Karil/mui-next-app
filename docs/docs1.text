@@ -1,0 +1,51 @@
+import React from "react";
+import Button from "@mui/material/Button";
+import { Add, Settings } from "@mui/icons-material";
+import { Typography, styled } from "@mui/material";
+
+export default function Home() {
+  const BlueButton = styled(Button)(({ theme }) => ({
+    backgroundColor: theme.palette.otherColor,
+    color: "black",
+    "&:hover": {
+      backgroundColor: theme.palette.otherColor,
+    },
+    "&:disabled": {
+      backgroundColor: "red",
+      color: "bisque",
+    },
+  }));
+  return (
+    <div>
+      Home
+      <Button variant="text" color="secondary" startIcon={<Settings />}>
+        Click Me
+      </Button>
+      <Button variant="text" color="success" startIcon={<Add />}>
+        Add New Post
+      </Button>
+      <Typography variant="h1" color="success" component={"p"}>
+        Hey this is vaishnavi
+      </Typography>
+      {/* Inline styling */}
+      <Button
+        variant="text"
+        disabled
+        sx={{
+          backgroundColor: "skyblue",
+          color: "white",
+          "&:hover": {
+            backgroundColor: "lightblue",
+          },
+          "&:disabled": {
+            backgroundColor: "red",
+            color: "bisque",
+          },
+        }}
+      >
+        Hey Baddy!
+      </Button>
+      <BlueButton>Hey this BlueButton Component</BlueButton>
+    </div>
+  );
+}
