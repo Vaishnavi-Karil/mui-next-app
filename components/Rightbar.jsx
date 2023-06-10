@@ -15,7 +15,7 @@ import {
 import Image from "next/image";
 import React from "react";
 
-export default function Rightbar() {
+export default function RightBar() {
   const StyledGallery = styled("Box")((theme) => ({
     width: "100%",
     position: "fixed",

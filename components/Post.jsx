@@ -13,7 +13,6 @@ import {
   CardHeader,
   CardMedia,
   Checkbox,
-  Collapse,
   IconButton,
   Typography,
 } from "@mui/material";

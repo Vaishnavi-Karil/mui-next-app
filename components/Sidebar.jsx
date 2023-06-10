@@ -1,5 +1,5 @@
 import { route } from "@/utils/routes";
-import { Home } from "@mui/icons-material";
+
 import {
   Box,
   List,
@@ -11,11 +11,7 @@ import {
 } from "@mui/material";
 import React from "react";
 
-export default function Sidebar({
-  mode,
-
-  setMode,
-}) {
+export default function Sidebar({ mode, setMode }) {
   return (
     <Box
       flex={1}
@@ -32,11 +28,7 @@ export default function Sidebar({
   );
 }
 
-const SidebarList = ({
-  mode,
-
-  setMode,
-}) => {
+const SidebarList = ({ mode, setMode }) => {
   return (
     <Box position="fixed">
       <List>
